@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
 class ExampleController extends Controller
 {
     /**
@@ -14,5 +17,10 @@ class ExampleController extends Controller
         //
     }
 
-    //
+    public function test(Request $request)
+    {
+        $test = $request->input('test');
+
+        return response()->json(['name' => 'Abigail', 'state' => 'CA']);
+    }
 }
