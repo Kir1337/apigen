@@ -7,6 +7,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "doctrine/orm": "^2.10",
+				"symfony/cache": "^5.3",
         "gossi/php-code-generator": "^0.5.0",
         "laravel/lumen-framework": "^8.3.1"
     },
